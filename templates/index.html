@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flasker</title>
+  </head>
+  <body>
+    <h1>Welcome to Flasker</h1>
+    <p>This is my first web page of mine</p>
+
+    <p>My name is {{first_name}}</p>
+
+    <p>Here goes stuff var: {{stuff | title}}</p>
+
+    <h4>Favorite Pizza</h4>
+    {% for topping in favorite_pizza %} {% if topping | string == topping %}
+    <p>{{ topping }}</p>
+    {% endif %} {% endfor %}
+  </body>
+</html>
